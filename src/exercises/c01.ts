@@ -4,25 +4,31 @@ export const ex00: TestCase = {
   given: ["a", "b", "z", "1"],
   expected: ["a", "b", "z", "1"],
   folder: "ex00",
-  allowedFunctions: [],
-  files: [""],
+  files: ["ft_putchar.c"],
+  entrypoint: "ft_putchar",
+  allowedFunctions: ["write"],
+  argv: [],
   program: false,
 };
 
 export const ex01: TestCase = {
-  given: null,
-  expected: "abcdefghijklmnopqrstuvwxyz",
-  folder: "ex01",
-  allowedFunctions: [],
-  files: [""],
+  given: ["a", "b", "z", "1"],
+  expected: ["a", "b", "z", "1"],
+  folder: "ex00",
+  files: ["ft_putchar.c"],
+  entrypoint: "ft_putchar",
+  allowedFunctions: ["write"],
+  argv: [],
   program: false,
 };
 
 export const ex02: TestCase = {
-  given: null,
-  expected: "abcdefghijklmnopqrstuvwxyz".split("").reverse().join(),
-  folder: "ex02",
-  allowedFunctions: [],
-  files: [""],
+  given: ["a", "b", "z", "1"],
+  expected: ["a", "b", "z", "1"],
+  folder: "ex00",
+  files: ["ft_putchar.c"],
+  entrypoint: "ft_putchar",
+  allowedFunctions: ["write"],
+  argv: [],
   program: false,
 };
