@@ -15,13 +15,13 @@ FetchContent_MakeAvailable(googletest)
 enable_testing()
 
 add_executable(
-  C00_TEST
+  C00
   c00.cc
 )
 target_link_libraries(
-    C00_TEST
+    C00
   gtest_main
 )
 
 include(GoogleTest)
-gtest_discover_tests(C00_TEST)
+gtest_discover_tests(C00)
